@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Example from './Example';
+import Increment from './Increment';
 
 class App extends Component {
 
@@ -33,7 +33,7 @@ class App extends Component {
         </p>
         <button type="button" onClick={this.handleClick}>Click me</button>
         {this.state.clicked ? <NewComponent /> : null}
-        {this.state.clicked ? <Example /> : null}
+        {this.state.clicked ? <Increment /> : null}
       </div>
     );
   }
